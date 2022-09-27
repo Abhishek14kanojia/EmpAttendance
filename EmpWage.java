@@ -1,31 +1,50 @@
 package org.Empexample;
 
+import java.util.*;
+
 public class EmpWage {
+	Random rd = new Random();
 	
 	int wagePerHours = 20;
 	int fullDayHours = 8;
-	int wage = 0;
+	int wage =160;
 	int partTimeHours = 3;
-	int workingDays = 20;
+	int workingDays = 0;
+	int hours = 0;
+	int total = 0;
 	
-	public void empWage(int present) {
-		switch (present) {
-		case 0:
-			wage = wagePerHours*present;
-			System.out.println("Wage is :" + wage);
-			break;
-		case 1:
-			wage = wagePerHours*partTimeHours;
-			System.out.println("wage is : " + wage);
-			break;
-		case 2:
-			wage = wagePerHours*fullDayHours;
-			System.out.println("Wage is : " + wage);
-			break;
-		
+	public void empWage() {
+		while (workingDays<20 && hours<100) {
+			int attendance = rd.nextInt(2);
 			
-		} workingDays = workingDays*wage;
-		System.out.println("20_WorkingDays is : " + workingDays);
+			if (hours == 90) {
+			hours += partTimeHours;
+			total = hours * wagePerHours;
+			System.out.println(hours);
+			System.out.println(total);
+			System.exit(0);
+			}
+			if (attendance == 1) {
+				int work = rd.nextInt(2);
+				if (work == 1) {
+					workingDays++;
+					
+				}else if (work == 0) {
+					hours += partTimeHours;
+					
+				}
+				
+				
+			}
+		}System.out.println(workingDays);
+		System.out.println(hours);
+		
+		if (workingDays == 20) {
+			total = workingDays * wage;
+			
+		} else if (hours<=100) {
+			total = hours * wagePerHours;
+		} System.out.println(total);
 	}
 
 }
