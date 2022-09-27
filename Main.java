@@ -13,6 +13,6 @@ public class Main {
 		empwage1.empWage(present);
 		
 		 
-	}
+	} 
 
 }

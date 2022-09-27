@@ -7,15 +7,21 @@ public class Attendance {
 	int present = 1;
 	
 	 public int Attendance() {
-		 present = rd.nextInt(2);
+		 present = rd.nextInt(3);
 		 
-		 if (present == 1) {
-			 System.out.println("Emp Present");
-			 
-		 } else {
-			 System.out.println("Emp Not Present");
-		 }
-		return present;
+		switch (present) {
+		case 0:
+			System.out.println("Emp is Absent");
+			break;
+		case 1:
+			System.out.println("Emp is Worked Part Time");
+			break;
+		case 2:
+			System.out.println("Emp is Worked Full Time");
+			break;
+		
+		
+		}return present;
 	 
 	 }
 	
