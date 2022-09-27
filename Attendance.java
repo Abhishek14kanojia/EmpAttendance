@@ -4,7 +4,7 @@ import java.util.*;
 public class Attendance {
 	Random rd = new Random();
 	
-	int present = 1;
+	int present;
 	
 	 public int Attendance() {
 		 present = rd.nextInt(3);

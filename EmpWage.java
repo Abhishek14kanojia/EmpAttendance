@@ -8,16 +8,21 @@ public class EmpWage {
 	int partTimeHours = 3;
 	
 	public void empWage(int present) {
-		if (present == 0) {
+		switch (present) {
+		case 0:
 			wage = wagePerHours*present;
 			System.out.println("Wage is :" + wage);
-		}else if(present == 1) {
+			break;
+		case 1:
 			wage = wagePerHours*partTimeHours;
-			System.out.println("wage is :"+ wage);
-			
-		}else if (present == 2) {
+			System.out.println("wage is : " + wage);
+			break;
+		case 2:
 			wage = wagePerHours*fullDayHours;
 			System.out.println("Wage is : " + wage);
+			break;
+		
+			
 		}
 	}
 

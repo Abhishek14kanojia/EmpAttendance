@@ -9,7 +9,6 @@ public class Main {
 		present = attendance.Attendance();
 		EmpWage empwage1 = new EmpWage();
 
-		
 		empwage1.empWage(present);
 		
 		 
