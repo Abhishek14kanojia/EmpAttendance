@@ -3,11 +3,14 @@ package org.Empexample;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		int present;
 		Attendance attendance = new Attendance();
 		
-		attendance.Attendance();
+		present = attendance.Attendance();
+		EmpWage empwage1 = new EmpWage();
+
 		
+		empwage1.empWage(present);
 		
 		 
 	}

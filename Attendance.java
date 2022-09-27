@@ -6,7 +6,7 @@ public class Attendance {
 	
 	int present = 1;
 	
-	 public void Attendance() {
+	 public int Attendance() {
 		 present = rd.nextInt(2);
 		 
 		 if (present == 1) {
@@ -15,8 +15,9 @@ public class Attendance {
 		 } else {
 			 System.out.println("Emp Not Present");
 		 }
+		return present;
 	 
-	 } 
+	 }
 	
 	
 }
