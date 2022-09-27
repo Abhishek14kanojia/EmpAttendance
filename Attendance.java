@@ -19,7 +19,7 @@ public class Attendance {
 		case 2:
 			System.out.println("Emp is Worked Full Time");
 			break;
-		
+		 
 		
 		}return present;
 	 

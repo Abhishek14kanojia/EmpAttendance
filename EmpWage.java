@@ -6,6 +6,7 @@ public class EmpWage {
 	int fullDayHours = 8;
 	int wage = 0;
 	int partTimeHours = 3;
+	int workingDays = 20;
 	
 	public void empWage(int present) {
 		switch (present) {
@@ -23,7 +24,8 @@ public class EmpWage {
 			break;
 		
 			
-		}
+		} workingDays = workingDays*wage;
+		System.out.println("20_WorkingDays is : " + workingDays);
 	}
 
 }
